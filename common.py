@@ -11,6 +11,9 @@ def press(x, y, x1, y1):
 def sendkeys(self, text):
     driver.find_element_by_id(self).send_keys(text)
 
+def xpath_sendkeys(self, text):
+    driver.find_element_by_xpath(self).send_keys(text)
+
 #截图
 def screenshot():
     now = time.strftime("%Y%m%d.%H.%M.%S")#获取当前时间
