@@ -6,11 +6,12 @@ from time import sleep
 
 close_button = "yc close 20 20 light"
 page_close_button = "shut down"
-iphone_input = "//XCUIElementTypeApplication[@name=\"爱鹿企业release\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField"
-
+iphone_input = "//XCUIElementTypeApplication[@name=\"爱鹿release\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField"
+password_input = "//XCUIElementTypeApplication[@name=\"爱鹿release\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeSecureTextField"
 
 class Test(unittest.TestCase):
     """登录"""
+    @unittest.skip('跳过')
     def test_01(self):
         """登录弹框"""
         click.tap(328, 709)
@@ -27,8 +28,14 @@ class Test(unittest.TestCase):
         """账号登录"""
         click.tap(328, 709)
         click.name("更多登录方式")
+        sleep(2)
         click.name("账号登录")
-        click.xpath()
+        common.xpath_sendkeys(iphone_input, '18810948950')
+        common.xpath_sendkeys(password_input, 'youcai123')
+        click.name("登录")
+        sleep(3)
+        common.assertion_name('me message')
+        common.quit()
 
 
 
@@ -37,6 +44,6 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(Test("test_01"))
+    suite.addTest(Test("test_02"))
     runner = unittest.TextTestRunner(verbosity=1)
     runner.run(suite)
