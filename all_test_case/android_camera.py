@@ -1,5 +1,5 @@
 # coding=utf-8
-from common import common, click
+from public import my_swipe, click
 import unittest
 import time
 from devices.ios_device import driver
@@ -36,13 +36,13 @@ class Test(unittest.TestCase):
         time.sleep(5)
         driver.tap(510, 1610).release().perform()
         click.resourceid(back)
-        common.assertion_resourceid(u'确定放弃已经录制好的视频吗？', back_msg)
+        my_swipe.assertion_resourceid(u'确定放弃已经录制好的视频吗？', back_msg)
         #提示框点击取消按钮
         click.resourceid(cancel)
         click.resourceid(back)
         #提示框点击确定按钮，返回精选页
         click.resourceid(sure)
-        common.assertion_resourceid(u"小视频", tabname)
+        my_swipe.assertion_resourceid(u"小视频", tabname)
 
 
     def test_02(self):
@@ -52,18 +52,18 @@ class Test(unittest.TestCase):
         #设置倒计时3s
         click.resourceid(count3s)
         click.resourceid(screen_view)
-        common.assertion_resourceid("3", count)
+        my_swipe.assertion_resourceid("3", count)
         #设置倒计时5s
         click.resourceid(more)
         click.resourceid(count5s)
         click.resourceid(screen_view)
-        common.assertion_resourceid("5", count)
+        my_swipe.assertion_resourceid("5", count)
         #设置倒计时10s
         click.resourceid(more)
         click.resourceid(count10s)
         click.resourceid(screen_view)
         #验证设置倒计时10S成功
-        common.assertion_resourceid("10", count)
+        my_swipe.assertion_resourceid("10", count)
 
     def test_03(self):
         """拍摄页面，设置拍摄时长"""
@@ -107,7 +107,7 @@ class Test(unittest.TestCase):
         #点击拍摄按钮
         driver.tap(510, 1610)
         time.sleep(4)
-        common.assertion_resourceid(u'输入标题更醒目哦～', "com.tudou.android:id/videoTitle")
+        my_swipe.assertion_resourceid(u'输入标题更醒目哦～', "com.tudou.android:id/videoTitle")
         click.resourceid(back)
 
     def test_06(self):

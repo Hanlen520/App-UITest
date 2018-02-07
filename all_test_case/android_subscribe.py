@@ -1,5 +1,5 @@
 # coding=utf-8
-from common import common
+from public import my_swipe
 import unittest
 import time
 
@@ -25,32 +25,32 @@ class Test(unittest.TestCase):
     """订阅主题"""
     def test_01(self):
         """首页点击底部tab导航栏，进入订阅-主题页面"""
-        common.resourceid_click(tab_sub)
+        my_swipe.resourceid_click(tab_sub)
         time.sleep(3)
 
     def test_02(self):
         """点击进入主题管理页，点击看看推荐"""
-        common.resourceid_click(sub_user_list)
-        common.resourceid_assert(u"还没有订阅过主题哦~", list_empty)
-        common.resourceid_click(list_empty_button)
+        my_swipe.resourceid_click(sub_user_list)
+        my_swipe.resourceid_assert(u"还没有订阅过主题哦~", list_empty)
+        my_swipe.resourceid_click(list_empty_button)
 
     def test_03(self):
         """主题管理页，点击除订阅按钮外的区域，进入主题详情页"""
-        common.resourceid_click(sub_button)
-        common.resourceid_click(sub_user_list)
-        common.resourceid_click(list_subject_title)
-        common.resourceid_click(subject_detail_back)
+        my_swipe.resourceid_click(sub_button)
+        my_swipe.resourceid_click(sub_user_list)
+        my_swipe.resourceid_click(list_subject_title)
+        my_swipe.resourceid_click(subject_detail_back)
 
     def test_04(self):
         """主题管理页，点击已订阅按钮，取消订阅，下拉刷新后在列表中移除"""
-        common.resourceid_click(list_subscribe_button)
-        common.resourceid_assert(u"订阅", list_subscribe_state)
-        common.swipeDown(1000)
-        common.resourceid_assert(u"还没有订阅过主题哦~", list_empty)
-        common.classname_click(list_back)
+        my_swipe.resourceid_click(list_subscribe_button)
+        my_swipe.resourceid_assert(u"订阅", list_subscribe_state)
+        my_swipe.swipeDown(1000)
+        my_swipe.resourceid_assert(u"还没有订阅过主题哦~", list_empty)
+        my_swipe.classname_click(list_back)
 
     def test_quit(self):
-        common.quit()
+        my_swipe.quit()
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
