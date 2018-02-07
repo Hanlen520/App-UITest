@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8e69243-ac04-4dad-819a-6b197827c51c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/devices/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/all_test_case/android_camera.py" afterPath="$PROJECT_DIR$/all_test_case/android_camera.py" />
-      <change beforePath="$PROJECT_DIR$/all_test_case/android_category.py" afterPath="$PROJECT_DIR$/all_test_case/android_category.py" />
-      <change beforePath="$PROJECT_DIR$/all_test_case/android_search.py" afterPath="$PROJECT_DIR$/all_test_case/android_search.py" />
-      <change beforePath="$PROJECT_DIR$/all_test_case/android_subscribe.py" afterPath="$PROJECT_DIR$/all_test_case/android_subscribe.py" />
-      <change beforePath="$PROJECT_DIR$/all_test_case/ios_camera.py" afterPath="$PROJECT_DIR$/all_test_case/ios_camera.py" />
-      <change beforePath="$PROJECT_DIR$/all_test_case/ios_homepage.py" afterPath="$PROJECT_DIR$/all_test_case/ios_homepage.py" />
-      <change beforePath="$PROJECT_DIR$/all_test_case/ios_passport.py" afterPath="$PROJECT_DIR$/all_test_case/ios_passport.py" />
-      <change beforePath="$PROJECT_DIR$/click.py" afterPath="$PROJECT_DIR$/common/click.py" />
-      <change beforePath="$PROJECT_DIR$/common.py" afterPath="$PROJECT_DIR$/common/common.py" />
-      <change beforePath="$PROJECT_DIR$/device.py" afterPath="$PROJECT_DIR$/devices/ios_device.py" />
-      <change beforePath="$PROJECT_DIR$/test.py" afterPath="" />
-    </list>
+    <list default="true" id="e8e69243-ac04-4dad-819a-6b197827c51c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/devices/ios_device.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -417,7 +403,7 @@
     <entry file="file://$PROJECT_DIR$/devices/ios_device.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
