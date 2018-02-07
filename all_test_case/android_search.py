@@ -1,8 +1,7 @@
 # coding=utf-8
-from device import driver
 import unittest
 import time
-import common
+from common import common
 
 entrance = "com.tudou.android:id/rip2_home_search_rl"
 search_text = "com.tudou.android:id/et_widget_search_text"

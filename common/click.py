@@ -1,5 +1,5 @@
 # coding=utf-8
-from device import driver
+from devices.ios_device import driver
 from appium.webdriver.common.touch_action import TouchAction
 
     #resourceId属性的方法

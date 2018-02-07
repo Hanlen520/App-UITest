@@ -1,9 +1,8 @@
 # coding=utf-8
-import common
-import click
+from common import common, click
 import unittest
 import time
-from device import driver
+from devices.ios_device import driver
 
 enter = "com.tudou.android:id/tab_upload"
 back = "com.tudou.android:id/imgBack"

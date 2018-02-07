@@ -1,5 +1,5 @@
 import unittest
-from device import driver
+from devices.ios_device import driver
 
 class Test(unittest.TestCase):
     """小视频首页"""

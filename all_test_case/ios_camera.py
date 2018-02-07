@@ -1,9 +1,7 @@
 # coding=utf-8
 import unittest
 from time import sleep
-import click
-import common
-
+from common import common, click
 
 enter = "tab capture"
 back = "camera discover"

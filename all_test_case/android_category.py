@@ -1,5 +1,5 @@
 # coding=utf-8
-import common
+from common import common
 import unittest
 
 entrance = "com.tudou.android:id/tab_category"
@@ -11,7 +11,7 @@ class Test(unittest.TestCase):
     def test_01(self):
         """首页点击tab导航栏，进入发现页面"""
         common.resourceid_click(entrance)
-        common.resourceid_assert(u"火爆主题",drawer_title)
+        common.resourceid_assert(u"火爆主题", drawer_title)
 
     def test_02(self):
         common.resourceid_click(home)
