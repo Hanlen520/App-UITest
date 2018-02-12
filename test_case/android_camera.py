@@ -1,5 +1,5 @@
 # coding=utf-8
-from public import my_swipe, click
+from common import my_swipe, click
 import unittest
 import time
 from devices.ios_device import driver

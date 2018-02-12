@@ -1,6 +1,6 @@
 # coding=utf-8
 from devices.ios_device import driver
-from public.screenshot import screenshot
+from common.screenshot import screenshot
 
 
 #通过classname查找元素，进行断言

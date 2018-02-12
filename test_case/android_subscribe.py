@@ -1,5 +1,5 @@
 # coding=utf-8
-from public import my_swipe
+from common import my_swipe
 import unittest
 import time
 

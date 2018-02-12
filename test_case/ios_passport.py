@@ -1,6 +1,6 @@
 # coding=utf-8
 import unittest
-from public import my_swipe, click
+from common import my_swipe, click
 from time import sleep
 
 close_button = "yc close 20 20 light"

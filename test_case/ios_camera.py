@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 from time import sleep
-from public import my_swipe, click
+from common import my_swipe, click
 
 enter = "tab capture"
 back = "camera discover"

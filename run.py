@@ -14,7 +14,7 @@ if sys.getdefaultencoding() != default_encoding:
 #导入多个py的类下，用（py名.类名）
 
 
-all_case = '/Users/xintudoutest/appium/AppiumUI/all_test_case'
+all_case = '/Users/xintudoutest/appium/AppiumUI/test_case'
 def CreateSuite():                                                        #产生测试套件
     test_suite = unittest.TestSuite()                                     #使用discover找出用例文件夹下all_test_case的所有用例
     discover = unittest.defaultTestLoader.discover(all_case,              #查找的文件夹路径

@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 import time
-from public import my_swipe
+from common import my_swipe
 
 entrance = "com.tudou.android:id/rip2_home_search_rl"
 search_text = "com.tudou.android:id/et_widget_search_text"
