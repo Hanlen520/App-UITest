@@ -4,7 +4,7 @@ from GetYaml import getyaml
 from BaseOperate import BaseOperate
 
 class Operate:
-    def __init__(self,path,driver):
+    def __init__(self, path, driver):
         self.path = path
         self.driver = driver
         self.yaml = getyaml(self.path)

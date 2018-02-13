@@ -3,6 +3,7 @@ import unittest
 import HTMLTestRunner
 import time
 import sys
+from importlib import reload
 
 #解决htmltestrunner中显示乱码的问题
 default_encoding = 'utf-8'
@@ -24,7 +25,7 @@ def CreateSuite():                                                        #产�
     for suite in discover:  #使用for循环出suite,再循环出case
         for case in suite:
             test_suite.addTests(case)
-            print test_suite
+            print(test_suite)
     return test_suite
 
 
