@@ -5,8 +5,8 @@ import time
 desired_caps = dict(platformName='Android',
                     deviceName='WWOUPJ9T99999999',
                     platformVersion='5.1',
-                    appPackage='com.youcai.android',
-                    appActivity='com.youcai.android.ui.activity.SplashActivity',
+                    appPackage='com.tencent.qqmusic',
+                    appActivity='com.tencent.qqmusic.activity.AppStarterActivity',
                     unicodeKeyboard=True,
                     resetKeyboard=True)
 
