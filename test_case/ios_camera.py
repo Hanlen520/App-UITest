@@ -1,7 +1,8 @@
 # coding=utf-8
 import unittest
 from time import sleep
-from common import my_swipe, click
+from common import click
+from study import Swipe
 
 enter = "tab capture"
 back = "camera discover"
@@ -51,10 +52,10 @@ class Test(unittest.TestCase):
         click.tap(208, 346)
         sleep(2)
         #验证设置10s是否生效
-        my_swipe.assertion_name("10")
+        Swipe.assertion_name("10")
         click.name("10")
         sleep(2)
-        my_swipe.assertion_name("9")
+        Swipe.assertion_name("9")
         click.xpath(camera_button_2)
         sleep(2)
         #取消倒计时设置
@@ -65,7 +66,7 @@ class Test(unittest.TestCase):
         #验证取消倒计时成功
         click.xpath(camera_button)
         sleep(4)
-        my_swipe.assertion_name("camera nextstep")
+        Swipe.assertion_name("camera nextstep")
         click.xpath(camera_button)
         sleep(2)
         #退出拍摄页面
@@ -89,7 +90,7 @@ class Test(unittest.TestCase):
         sleep(12)
         click.xpath(camera_button)
         sleep(2)
-        my_swipe.assertion_name("camera nextstep")
+        Swipe.assertion_name("camera nextstep")
         click.name(back)
         click.name("确定")
 
@@ -122,9 +123,9 @@ class Test(unittest.TestCase):
         click.name("极快")
         sleep(2)
         #左右滑动
-        my_swipe.press(320, 577, -240, 0)
+        Swipe.press(320, 577, -240, 0)
         sleep(2)
-        my_swipe.press(85, 577, 240, 0)
+        Swipe.press(85, 577, 240, 0)
         sleep(2)
         #点击0.25X
         click.name("极慢")

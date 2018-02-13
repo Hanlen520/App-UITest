@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e69243-ac04-4dad-819a-6b197827c51c" name="Default" comment="" />
+<<<<<<< HEAD
+=======
     <ignored path=".idea/dataSources.local.xml" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file leaf-file-name="BaseOperate.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/BaseOperate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7">
+              <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+=======
       <file leaf-file-name="BaseOperate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/BaseOperate.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,8 +59,14 @@
       <file leaf-file-name="ad_device.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/devices/ad_device.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="247">
               <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+=======
+            <state relative-caret-position="171">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
+>>>>>>> 67559665831ff94eb9f16bc8afd6c0bda9c83fcb
               <folding>
                 <element signature="e#15#43#0" expanded="true" />
               </folding>
@@ -71,8 +87,13 @@
       <file leaf-file-name="my_swipe.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/my_swipe.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="615">
+              <caret line="42" column="14" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+=======
             <state relative-caret-position="410">
               <caret line="42" column="14" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
               <folding />
             </state>
           </provider>
@@ -81,8 +102,13 @@
       <file leaf-file-name="logs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/logs.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="120">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+=======
             <state relative-caret-position="190">
               <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
               <folding>
                 <element signature="e#16#25#0" expanded="true" />
               </folding>
@@ -142,6 +168,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="11" />
+    <option name="y" value="34" />
+    <option name="width" value="1231" />
+    <option name="height" value="720" />
+=======
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -157,6 +190,7 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -553,8 +587,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="0" y="23" width="1280" height="720" extended-state="6" />
+    <editor active="true" />
+=======
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="false" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.247851" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -562,7 +601,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.49713466" order="2" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< HEAD
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32839838" sideWeight="0.49713466" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
+>>>>>>> 67559665831ff94eb9f16bc8afd6c0bda9c83fcb
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -600,23 +651,40 @@
     <entry file="file://$PROJECT_DIR$/common/BaseOperate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+<<<<<<< HEAD
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#71#0" expanded="true" />
+          </folding>
+=======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/my_swipe.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="615">
+          <caret line="42" column="14" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+=======
         <state relative-caret-position="798">
           <caret line="42" column="14" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/logs.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="120">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+=======
         <state relative-caret-position="152">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
@@ -625,8 +693,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/assertion.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="60">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+=======
         <state relative-caret-position="76">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
           <folding />
         </state>
       </provider>
@@ -641,10 +714,14 @@
     <entry file="file://$PROJECT_DIR$/devices/ios_device.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
+<<<<<<< HEAD
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
+=======
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="e#15#43#0" expanded="true" />
           </folding>
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
@@ -673,10 +750,14 @@
     <entry file="file://$PROJECT_DIR$/devices/ios_device.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
+<<<<<<< HEAD
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
+=======
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="e#15#43#0" expanded="true" />
           </folding>
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
@@ -705,10 +786,14 @@
     <entry file="file://$PROJECT_DIR$/devices/ios_device.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
+<<<<<<< HEAD
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
+=======
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="e#15#43#0" expanded="true" />
           </folding>
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
@@ -737,10 +822,14 @@
     <entry file="file://$PROJECT_DIR$/devices/ios_device.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
+<<<<<<< HEAD
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
+=======
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="e#15#43#0" expanded="true" />
           </folding>
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
@@ -755,7 +844,18 @@
     <entry file="file://$PROJECT_DIR$/common/click.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+<<<<<<< HEAD
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
@@ -784,13 +884,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/sendkeys.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+=======
         <state relative-caret-position="45">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/click.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+=======
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
         </state>
@@ -802,6 +911,7 @@
         <state relative-caret-position="76">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
@@ -809,8 +919,12 @@
     <entry file="file://$PROJECT_DIR$/common/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+<<<<<<< HEAD
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+=======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
         </state>
       </provider>
     </entry>
@@ -824,8 +938,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/logs.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="120">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+=======
         <state relative-caret-position="190">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
@@ -840,6 +959,13 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/common/screenshot.py" />
+    <entry file="file://$PROJECT_DIR$/common/my_swipe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="42" column="14" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+=======
     <entry file="file://D:/Python/Lib/site-packages/selenium/webdriver/support/wait.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -854,12 +980,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/BaseOperate.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="7">
+          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+=======
         <state relative-caret-position="38">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding />
@@ -870,6 +1001,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+>>>>>>> 6a85d5f047f99c66ae937b1076f42e2c34b5ee91
           <folding>
             <element signature="e#15#43#0" expanded="true" />
           </folding>

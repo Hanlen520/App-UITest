@@ -79,7 +79,7 @@ class BaseOperate:
         else:
             return False
 
-    def find_name(self,name):
+    def find_name(self, name):
         '''
         判断页面是否存在某个元素
         :param name: text
@@ -87,12 +87,12 @@ class BaseOperate:
         '''
         findname = "//*[@text='%s']"%(name)
         exsit = self.driver.find_element_by_xpath(findname)
-        if exsit :
+        if exsit:
             return True
         else:
             return False
 
-    def get_name(self,name):
+    def get_name(self, name):
         '''
         定位页面text元素
         :param name:
