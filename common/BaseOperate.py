@@ -1,7 +1,7 @@
 # coding=utf-8
 
 from selenium.webdriver.support.ui import WebDriverWait
-from logs import log
+from common.logs import log
 import os
 import time
 
@@ -66,7 +66,7 @@ class BaseOperate:
         now = time.strftime("%Y%m%d.%H.%M.%S")
         # 将图片保存到指定目录下，并用时间命名
         self.driver.get_screenshot_as_file('/Users/xintudoutest/appium/AppiumUI/screenshot/' + now + '.png')
-        print 'screenshot:', now, '.png'
+        print('screenshot:', now, '.png')
 
     def find_id(self, id):
         '''
