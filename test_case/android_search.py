@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 import time
-from common import my_swipe
+from common import swipeOperate
 
 entrance = "com.tudou.android:id/rip2_home_search_rl"
 search_text = "com.tudou.android:id/et_widget_search_text"
@@ -13,18 +13,18 @@ class Test(unittest.TestCase):
     """搜索测试用例"""
     def test_01(self):
         """首页点击搜索按钮，进入搜索页面"""
-        my_swipe.resourceid_click(entrance)
-        my_swipe.resourceid_assert(u'搜索', search_button)
+        swipeOperate.resourceid_click(entrance)
+        swipeOperate.resourceid_assert(u'搜索', search_button)
 
     def test_02(self):
         """输入内容，点击搜索按钮，进入搜索结果页面"""
-        my_swipe.resourceid_sendkeys(search_text, text)
-        my_swipe.resourceid_click(search_button)
+        swipeOperate.resourceid_sendkeys(search_text, text)
+        swipeOperate.resourceid_click(search_button)
         time.sleep(3)
-        my_swipe.resourceid_assert(u"火影忍者 2002", video_title)
+        swipeOperate.resourceid_assert(u"火影忍者 2002", video_title)
 
     def test_03(self):
-        my_swipe.swipeUp(1000)
+        swipeOperate.swipeUp(1000)
 
 #添加要执行的case，需要测试的用例就addTest，不加的就不会运行
 if __name__ == '__main__':
