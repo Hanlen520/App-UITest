@@ -1,5 +1,5 @@
 # coding=utf-8
-from common import swipeOperate
+from study import Swipe
 import unittest
 
 entrance = "com.tudou.android:id/tab_category"
@@ -10,14 +10,14 @@ class Test(unittest.TestCase):
     """发现测试用例"""
     def test_01(self):
         """首页点击tab导航栏，进入发现页面"""
-        swipeOperate.resourceid_click(entrance)
-        swipeOperate.resourceid_assert(u"火爆主题", drawer_title)
+        Swipe.resourceid_click(entrance)
+        Swipe.resourceid_assert(u"火爆主题", drawer_title)
 
     def test_02(self):
-        swipeOperate.resourceid_click(home)
+        Swipe.resourceid_click(home)
 
     def test_03(self):
-        swipeOperate.swipeDown(1000)
+        Swipe.swipeDown(1000)
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()

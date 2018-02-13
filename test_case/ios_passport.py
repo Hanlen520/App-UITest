@@ -1,6 +1,7 @@
 # coding=utf-8
 import unittest
-from common import swipeOperate, click
+from common import click
+from study import Swipe
 from time import sleep
 
 close_button = "yc close 20 20 light"
@@ -29,12 +30,12 @@ class Test(unittest.TestCase):
         click.name("更多登录方式")
         sleep(2)
         click.name("账号登录")
-        swipeOperate.xpath_sendkeys(iphone_input, '18810948950')
-        swipeOperate.xpath_sendkeys(password_input, 'youcai123')
+        Swipe.xpath_sendkeys(iphone_input, '18810948950')
+        Swipe.xpath_sendkeys(password_input, 'youcai123')
         click.name("登录")
         sleep(3)
-        swipeOperate.assertion_name('me message')
-        swipeOperate.quit()
+        Swipe.assertion_name('me message')
+        Swipe.quit()
 
 
 
