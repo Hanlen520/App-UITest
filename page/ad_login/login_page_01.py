@@ -2,7 +2,7 @@
 import os
 from common.operate import Operate
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-yamlpath = PATH("D:\\Study-Appium\\test_yaml\\ad_login_001.yaml")
+yamlpath = PATH("D:\\Study-Appium\\test_yaml\\ad_login_01.yaml")
 
 class login_001:
 

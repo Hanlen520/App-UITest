@@ -3,13 +3,13 @@ import os
 import time
 import unittest
 from HTMLTestRunner import HTMLTestRunner
-from test_case.ad_test_login import login
+from Case.ad_login import Test
 
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
 
 def testsuit():
     suite = unittest.TestSuite()
-    suite.addTests([unittest.defaultTestLoader.loadTestsFromTestCase(login), ])
+    suite.addTests([unittest.defaultTestLoader.loadTestsFromTestCase(Test), ])
 
     # runner = unittest.TextTestRunner(verbosity=2)
     # runner.run(suite)
