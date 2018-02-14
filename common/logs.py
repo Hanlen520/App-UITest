@@ -15,13 +15,13 @@ class log():
     def __init__(self):
 
         filename = 'Waiqin365'+''.join(time.strftime('%Y%m%d'))+''.join('.log') #设置log名
-        self.logname =os.path.join(log_path,filename)
+        self.logname =os.path.join(log_path, filename)
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
         #设置日志输出格式
         self.formatter = logging.Formatter('[%(asctime)s] - [%(levelname)s] - %(message)s')
 
-    def output(self,level,message):
+    def output(self, level, message):
         '''
         :param level: 日志等级
         :param message: 日志需要打印的信息
@@ -55,15 +55,15 @@ class log():
 
         fh.close()
 
-    def info(self,message):
+    def info(self, message):
         self.output('info', message)
 
-    def debug(self,message):
+    def debug(self, message):
         self.output('debug', message)
 
-    def warn(self,message):
+    def warn(self, message):
         self.output('warn', message)
 
-    def error(self,message):
+    def error(self, message):
         self.output('error', message)
 

@@ -2,7 +2,7 @@
 
 import yaml
 import sys
-from importlib import reload
+#from importlib import reload
 reload(sys)
 sys.setdefaultencoding('utf8')
 
@@ -26,7 +26,7 @@ class getyaml:
             print(u"未找到yaml文件")
 
     def alldata(self):
-        data =self.getYaml()
+        data = self.getYaml()
         return data
 
     def caselen(self):
@@ -51,8 +51,8 @@ class getyaml:
 
     def get_index(self,i):
         data = self.alldata()
-        if self.get_findtype(i)=='ids':
-                    return data['testcase'][i]['index']
+        if self.get_findtype(i) == 'ids':
+            return data['testcase'][i]['index']
         else:
             pass
 
@@ -66,8 +66,8 @@ class getyaml:
 
     def get_backtimes(self,i):
         data = self.alldata()
-        if self.get_operate_type(i)=='back' or self.get_operate_type(i)=='swipe_up':
-                    return data['testcase'][i]['times']
+        if self.get_operate_type(i) == 'back' or self.get_operate_type(i) == 'swipe_up':
+            return data['testcase'][i]['times']
         else:
             pass
 

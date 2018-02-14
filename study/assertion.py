@@ -1,6 +1,8 @@
 # coding=utf-8
-from devices.ios_device import driver
-from common.screenshot import screenshot
+from devices.ad_device import driver
+from common.baseOperate import BaseOperate
+
+
 
 
 #通过classname查找元素，进行断言
@@ -9,7 +11,7 @@ def assertion_class(self, id):
         assert self == driver.find_element_by_class_name(id).text
     except Exception as msg:
         print(u'测试未通过%s'%msg)
-        screenshot()
+        BaseOperate.screenshot()
         raise
 
 
@@ -19,7 +21,7 @@ def assertion_resourceid(self, id):
         assert self == driver.find_element_by_id(id).text
     except Exception as msg:
         print(u'测试未通过%s'%msg)
-        screenshot()
+        BaseOperate.screenshot()
         raise
 
 
@@ -29,5 +31,5 @@ def assertion_name(name):
         assert driver.find_element_by_name(name).is_displayed()
     except Exception as msg:
         print(u'测试未通过%s' % msg)
-        screenshot()
+        BaseOperate.screenshot()
         raise

@@ -1,14 +1,14 @@
 # coding=utf-8
 
-from GetYaml import getyaml
-from BaseOperate import BaseOperate
+from getYaml import getyaml
+from baseOperate import BaseOperate
 
 class Operate:
     def __init__(self, path, driver):
         self.path = path
         self.driver = driver
         self.yaml = getyaml(self.path)
-        self.baseoperate=BaseOperate(driver)
+        self.baseoperate = BaseOperate(driver)
 
     def check_operate_type(self):
         '''

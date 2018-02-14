@@ -111,7 +111,7 @@ class BaseOperate:
             self.screenshot()
             log.error('未定位到元素：'+'%s'%(name))
 
-    def get_id(self,id):
+    def get_id(self, id):
         '''
         定位页面resouce-id元素
         :param id:
@@ -126,7 +126,7 @@ class BaseOperate:
             self.screenshot()
             log.error('未定位到元素：'+'%s'%(id))
 
-    def get_xpath(self,xpath):
+    def get_xpath(self, xpath):
         '''
         定位页面xpath元素
         :param id:
@@ -141,7 +141,7 @@ class BaseOperate:
             self.screenshot()
             log.error('未定位到元素：'+'%s'%(xpath))
 
-    def get_ids(self,id):
+    def get_ids(self, id):
         '''
         定位页面resouce-id元素组
         :param id:
@@ -156,14 +156,14 @@ class BaseOperate:
             self.screenshot()
             log.error('未定位到元素：'+'%s'%(id))
 
-    def page(self,name):
+    def page(self, name):
         '''
         返回至指定页面
         :return:
         '''
-        i=0
-        while i<10:
-            i=i+1
+        i = 0
+        while i < 10:
+            i = i+1
             try:
                 findname = "//*[@text='%s']"%(name)
                 self.driver.find_element_by_xpath(findname)

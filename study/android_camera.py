@@ -1,6 +1,5 @@
 # coding=utf-8
-from common import click
-from study import Swipe
+from study import Swipe, click
 import unittest
 import time
 from devices.ios_device import driver
