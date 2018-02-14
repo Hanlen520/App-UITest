@@ -5,14 +5,11 @@ from common.logs import log
 import os
 import time
 
-
 '''
 一些基础操作：滑动、截图、点击页面元素等
 '''
 
 log = log()
-# driver = GetDriver.mydriver()
-
 class BaseOperate:
     def __init__(self, driver):
         self.driver = driver
@@ -23,7 +20,6 @@ class BaseOperate:
         :return:
         '''
         os.popen("adb shell input keyevent 4")
-
 
     def swipeUp(self):
         '''
@@ -65,7 +61,8 @@ class BaseOperate:
         # 获取当前时间
         now = time.strftime("%Y%m%d.%H.%M.%S")
         # 将图片保存到指定目录下，并用时间命名
-        self.driver.get_screenshot_as_file('/Users/xintudoutest/appium/AppiumUI/screenshot/' + now + '.png')
+        self.driver.get_screenshot_as_file('D:\\Study-Appium\\screenshot\\' + now + '.png')
+#       self.driver.get_screenshot_as_file('/Users/xintudoutest/appium/AppiumUI/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 
     def find_id(self, id):
@@ -118,8 +115,8 @@ class BaseOperate:
         :return:
         '''
         try:
-            element = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_id(id()))
-            # element = self.driver.find_element_by_id(id)
+            # element = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_id(id()))
+            element = self.driver.find_element_by_id(id)
             self.driver.implicitly_wait(2)
             return element
         except:

@@ -1,7 +1,6 @@
 # coding=utf-8
-
-from getYaml import getyaml
-from baseOperate import BaseOperate
+from common.getYaml import getyaml
+from common.baseOperate import BaseOperate
 
 class Operate:
     def __init__(self, path, driver):

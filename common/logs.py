@@ -1,19 +1,14 @@
 # coding=utf-8
-
 import os
 import time
 import logging
 
 #使用相对路径+绝对路径
-PATH = lambda p: os.path.abspath(
-    os.path.join(os.path.dirname(__file__), p)
-)
-log_path = PATH("../logs")
+PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
+log_path = PATH("D:\\Study-Appium\\logs\\")
 
 class log():
-
     def __init__(self):
-
         filename = 'Waiqin365'+''.join(time.strftime('%Y%m%d'))+''.join('.log') #设置log名
         self.logname =os.path.join(log_path, filename)
         self.logger = logging.getLogger()

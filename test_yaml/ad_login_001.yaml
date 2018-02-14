@@ -1,0 +1,32 @@
+testinfo:
+    - id: login_001
+      title: 爱鹿登录
+      execute: 1
+testcase:
+    -
+      element_info: com.youcai.android:id/home_tab_mine
+      find_type: id
+      operate_type: click
+    -
+      element_info: 账号登录
+      find_type: text
+      operate_type: click
+    -
+      element_info: com.youcai.android:id/passport_username
+      find_type: id
+      operate_type: send_keys
+      send_content: 18810948950
+    -
+      element_info: com.youcai.android:id/passport_password
+      find_type: id
+      operate_type: send_keys
+      send_content: ailu123456
+    -
+      element_info: com.youcai.android:id/passport_login
+      find_type: id
+      operate_type: click
+    -
+      element_info:
+      find_type:
+      operate_type: back
+      times: 1
