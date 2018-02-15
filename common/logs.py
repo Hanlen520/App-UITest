@@ -9,7 +9,7 @@ log_path = PATH("D:\\Study-Appium\\logs\\")
 
 class log():
     def __init__(self):
-        filename = 'Waiqin365'+''.join(time.strftime('%Y%m%d'))+''.join('.log') #设置log名
+        filename = 'Quanquan'+''.join(time.strftime('%Y%m%d'))+''.join('.log') #设置log名
         self.logname =os.path.join(log_path, filename)
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)

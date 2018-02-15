@@ -2,7 +2,7 @@
 
 import unittest
 import time
-from page.ad_login.login_page_01 import login_001
+from page.login.login_page_01 import login_001
 from devices.ad_device import driver
 
 class Test(unittest.TestCase):

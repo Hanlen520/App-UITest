@@ -1,5 +1,5 @@
 # coding=utf-8
-from study import Swipe, click, assertion
+from study import click, assertion
 import unittest
 import time
 from devices.ad_device import driver
@@ -107,7 +107,7 @@ class Test(unittest.TestCase):
         #点击拍摄按钮
         driver.tap(510, 1610)
         time.sleep(4)
-        Swipe.assertion_resourceid(u'输入标题更醒目哦～', "com.tudou.android:id/videoTitle")
+        assertion.assertion_resourceid(u'输入标题更醒目哦～', "com.tudou.android:id/videoTitle")
         click.resourceid(back)
 
     def test_06(self):

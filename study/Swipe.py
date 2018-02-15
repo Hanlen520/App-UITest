@@ -1,7 +1,6 @@
 # coding=utf-8
-from devices.ios_device import driver
+from devices.ad_device import driver
 from appium.webdriver.common.touch_action import TouchAction
-
 
 #按照坐标滑动，从x,y滑动到x1,y1
 def press(x, y, x1, y1):

@@ -1,5 +1,4 @@
 # coding=utf-8
-
 from selenium.webdriver.support.ui import WebDriverWait
 from common.logs import log
 import os
@@ -62,7 +61,7 @@ class BaseOperate:
         now = time.strftime("%Y%m%d.%H.%M.%S")
         # 将图片保存到指定目录下，并用时间命名
         self.driver.get_screenshot_as_file('D:\\Study-Appium\\screenshot\\' + now + '.png')
-#       self.driver.get_screenshot_as_file('/Users/xintudoutest/appium/AppiumUI/screenshot/' + now + '.png')
+        # self.driver.get_screenshot_as_file('/Users/xintudoutest/appium/AppiumUI/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 
     def find_id(self, id):
@@ -105,8 +104,8 @@ class BaseOperate:
             self.driver.implicitly_wait(2)
             return element
         except:
-            self.screenshot()
             log.error('未定位到元素：'+'%s'%(name))
+            self.screenshot()
 
     def get_id(self, id):
         '''
@@ -120,8 +119,8 @@ class BaseOperate:
             self.driver.implicitly_wait(2)
             return element
         except:
-            self.screenshot()
             log.error('未定位到元素：'+'%s'%(id))
+            self.screenshot()
 
     def get_xpath(self, xpath):
         '''
@@ -135,8 +134,8 @@ class BaseOperate:
             self.driver.implicitly_wait(2)
             return element
         except:
-            self.screenshot()
             log.error('未定位到元素：'+'%s'%(xpath))
+            self.screenshot()
 
     def get_ids(self, id):
         '''
@@ -150,8 +149,8 @@ class BaseOperate:
             self.driver.implicitly_wait(2)
             return elements
         except:
-            self.screenshot()
             log.error('未定位到元素：'+'%s'%(id))
+            self.screenshot()
 
     def page(self, name):
         '''
