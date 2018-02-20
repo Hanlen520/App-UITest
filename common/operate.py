@@ -58,7 +58,7 @@ class Operate:
 
     def back_home(self):
         '''
-        返回至工作台
+        返回至首页
         :return:
         '''
-        self.baseoperate.page('工作台')
+        self.baseoperate.page('推荐')

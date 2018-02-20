@@ -1,0 +1,21 @@
+testinfo:
+    - id: login_002
+      title: 退出账号
+      execute: 1
+testcase:
+    -
+      element_info: com.youcai.android:id/home_tab_mine
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.youcai.android:id/user_center_setting
+      find_type: id
+      operate_type: click
+    -
+      element_info: 退出当前账号
+      find_type: text
+      operate_type: click
+    -
+      element_info: 退出账号
+      find_type: text
+      operate_type: click

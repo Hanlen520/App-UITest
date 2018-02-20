@@ -155,17 +155,18 @@ class BaseOperate:
     def page(self, name):
         '''
         返回至指定页面
+        代码有点问题，不能连续返回到首页
         :return:
-        '''
+
         i = 0
         while i < 10:
-            i = i+1
+            i = i + 1
             try:
-                findname = "//*[@text='%s']"%(name)
+                findname = "//*[@text='%s']" % (name)
                 self.driver.find_element_by_xpath(findname)
                 self.driver.implicitly_wait(2)
                 break
-            except :
+            except:
                 os.popen("adb shell input keyevent 4")
                 try:
                     findname = "//*[@text='确定']"
@@ -174,8 +175,9 @@ class BaseOperate:
                 except:
                     os.popen("adb shell input keyevent 4")
                 try:
-                    self.driver.find_element_by_xpath("//*[@text='工作台']")
+                    self.driver.find_element_by_xpath("//*[@text='推荐']")
                     self.driver.implicitly_wait(2)
                     break
                 except:
                     os.popen("adb shell input keyevent 4")
+'''

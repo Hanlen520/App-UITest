@@ -1,6 +1,6 @@
 testinfo:
     - id: login_001
-      title: 爱鹿登录
+      title: 手机账号登录
       execute: 1
 testcase:
     -
@@ -25,8 +25,3 @@ testcase:
       element_info: com.youcai.android:id/passport_login
       find_type: id
       operate_type: click
-    -
-      element_info:
-      find_type:
-      operate_type: back
-      times: 1
