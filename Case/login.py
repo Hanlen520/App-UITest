@@ -2,15 +2,15 @@
 
 import unittest
 import time
-from page.login.login_page_01 import login_001
+from page.login_page.login001 import login001
 from devices.ad_device import driver
 
 class Test(unittest.TestCase):
     """登录"""
     def test_01(self):
-        """账号登录"""
-        add = login_001(driver)
-        add.operateap()
+        """手机账号登录"""
+        add = login001(driver)
+        add.operatepe()
         add.home()
 
     def test_close(self):

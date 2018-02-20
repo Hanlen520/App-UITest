@@ -64,29 +64,29 @@ class BaseOperate:
         # self.driver.get_screenshot_as_file('/Users/xintudoutest/appium/AppiumUI/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 
-    def find_id(self, id):
-        '''
-        寻找元素
-        :return:
-        '''
-        exsit = self.driver.find_element_by_id(id)
-        if exsit:
-            return True
-        else:
-            return False
+    # def find_id(self, id):
+        # '''
+        # 寻找元素
+        # :return:
+        # '''
+        # exsit = self.driver.find_element_by_id(id)
+        # if exsit:
+            # return True
+        # else:
+            # return False
 
-    def find_name(self, name):
-        '''
-        判断页面是否存在某个元素
-        :param name: text
-        :return:
-        '''
-        findname = "//*[@text='%s']"%(name)
-        exsit = self.driver.find_element_by_xpath(findname)
-        if exsit:
-            return True
-        else:
-            return False
+    # def find_name(self, name):
+        # '''
+        # 判断页面是否存在某个元素
+        # :param name: text
+        # :return:
+        # '''
+        # findname = "//*[@text='%s']"%(name)
+        # exsit = self.driver.find_element_by_xpath(findname)
+        # if exsit:
+            # return True
+        # else:
+            # return False
 
     def get_name(self, name):
         '''

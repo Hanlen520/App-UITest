@@ -3,7 +3,7 @@ import os
 import time
 import unittest
 from HTMLTestRunner import HTMLTestRunner
-from Case.login import Test
+from Case.Login import Test
 
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
 
