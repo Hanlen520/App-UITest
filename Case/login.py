@@ -9,18 +9,19 @@ class Test(unittest.TestCase):
     """登录"""
     def test_01(self):
         """手机账号登录"""
-        add = login001(driver)
-        add.operatepe()
-        # add.home()
-
+        testone = login001(driver)
+        testone.operatepe()
+        testone.home()
+    @unittest.skip("跳过")
     def test_02(self):
         """退出账号登录"""
-        add = login003(driver)
-        add.operatepe()
+        testtwo = login003(driver)
+        testtwo.operatepe()
+        testtwo.home()
 
     def test_close(self):
+        time.sleep(5)
         driver.quit()
-        time.sleep(10)
 
 if __name__ == "__main__":
     unittest.main()

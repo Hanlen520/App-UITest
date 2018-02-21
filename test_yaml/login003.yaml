@@ -1,5 +1,5 @@
 testinfo:
-    - id: login_002
+    - id: login_003
       title: 退出账号
       execute: 1
 testcase:

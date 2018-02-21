@@ -157,7 +157,7 @@ class BaseOperate:
         返回至指定页面
         代码有点问题，不能连续返回到首页
         :return:
-
+        '''
         i = 0
         while i < 10:
             i = i + 1
@@ -169,7 +169,7 @@ class BaseOperate:
             except:
                 os.popen("adb shell input keyevent 4")
                 try:
-                    findname = "//*[@text='确定']"
+                    findname = "//*[@text='首页']"
                     self.driver.find_element_by_xpath(findname).click()
                     self.driver.implicitly_wait(2)
                 except:
@@ -180,4 +180,4 @@ class BaseOperate:
                     break
                 except:
                     os.popen("adb shell input keyevent 4")
-'''
+
