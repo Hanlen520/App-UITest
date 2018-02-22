@@ -9,7 +9,8 @@ desired_caps = dict(
                     appPackage='com.youcai.android',
                     appActivity='com.youcai.android.ui.activity.SplashActivity',
                     unicodeKeyboard=True,
-                    resetKeyboard=True)
+                    resetKeyboard=True,
+                    noReset=True)  # 启动客户端后不会清除数据
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 time.sleep(3)
