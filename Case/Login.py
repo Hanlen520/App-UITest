@@ -1,23 +1,23 @@
 # coding=utf-8
 import unittest
 import time
-from page.login_page.login001 import login001
-from page.login_page.login003 import login003
+from page.login_page.AccountLogin_01 import AccountLogin
+from page.login_page.ExitLogin_02 import ExitLogin
 from devices.ad_device import driver
 
 class Test(unittest.TestCase):
     """登录"""
     def test_01(self):
         """手机账号登录"""
-        testone = login001(driver)
-        testone.operatepe()
-        testone.home()
+        ac = AccountLogin(driver)
+        ac.operatepe()
+
     @unittest.skip("跳过")
     def test_02(self):
         """退出账号登录"""
-        testtwo = login003(driver)
-        testtwo.operatepe()
-        testtwo.home()
+        ex = ExitLogin(driver)
+        ex.operatepe()
+        ex.home()
 
     def test_close(self):
         time.sleep(5)

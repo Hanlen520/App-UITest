@@ -20,13 +20,23 @@ class BaseOperate:
         '''
         os.popen("adb shell input keyevent 4")
 
+    def get_window_size(self):
+        '''
+        获取屏幕大小
+        :return: windowsize
+        '''
+        global windowSize
+        windowSize = self.driver.get_window_size()
+        return windowSize
+
     def swipeUp(self):
         '''
         向上滑动
         :return:
         '''
-        width = self.driver.get_window_size()['width']
-        height = self.driver.get_window_size()['height']
+        windowsSize = self.get_window_size()
+        width = windowsSize.get("width")
+        height = windowsSize.get("height")
         self.driver.swipe(width/2, height*3/4, width/2, height/4, 1000)
 
     def swipeDown(self):
@@ -34,8 +44,9 @@ class BaseOperate:
         向下滑动
         :return:
         '''
-        width = self.driver.get_window_size()['width']
-        height = self.driver.get_window_size()['height']
+        windowsSize = self.get_window_size()
+        width = windowsSize.get("width")
+        height = windowsSize.get("height")
         self.driver.swipe(width/2, height/4, width/2, height*3/4, 1000)
 
     def swipeLeft(self):
@@ -43,8 +54,9 @@ class BaseOperate:
         向左滑动
         :return:
         '''
-        width = self.driver.get_window_size()['width']
-        height = self.driver.get_window_size()['height']
+        windowsSize = self.get_window_size()
+        width = windowsSize.get("width")
+        height = windowsSize.get("height")
         self.driver.swipe(width*3/4, height/2, width/20, height/2, 1000)
 
     def swipeRight(self):
@@ -52,9 +64,10 @@ class BaseOperate:
         向右滑动
         :return:
         '''
-        width = self.driver.get_window_size()['width']
-        height = self.driver.get_window_size()['height']
-        self.driver.swipe(width*3/4, height/2, width/20, height/2, 1000)
+        windowsSize = self.get_window_size()
+        width = windowsSize.get("width")
+        height = windowsSize.get("height")
+        self.driver.swipe(width/20, height/2, width*3/4, height/2, 1000)
 
     def screenshot(self):
         # 获取当前时间
@@ -64,29 +77,6 @@ class BaseOperate:
         # self.driver.get_screenshot_as_file('/Users/xintudoutest/appium/AppiumUI/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 
-    # def find_id(self, id):
-        # '''
-        # 寻找元素
-        # :return:
-        # '''
-        # exsit = self.driver.find_element_by_id(id)
-        # if exsit:
-            # return True
-        # else:
-            # return False
-
-    # def find_name(self, name):
-        # '''
-        # 判断页面是否存在某个元素
-        # :param name: text
-        # :return:
-        # '''
-        # findname = "//*[@text='%s']"%(name)
-        # exsit = self.driver.find_element_by_xpath(findname)
-        # if exsit:
-            # return True
-        # else:
-            # return False
 
     def get_name(self, name):
         '''

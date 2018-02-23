@@ -60,7 +60,7 @@ class getyaml:
 
     def get_backtimes(self, i):
         data = self.alldata()
-        if self.get_operate_type(i) == 'back' or self.get_operate_type(i) == 'swipe_up':
+        if self.get_operate_type(i) == 'back' or self.get_operate_type(i) == 'swipe_up' or self.get_operate_type(i) == 'swipe_down':
             return data['testcase'][i]['times']
         else:
             pass

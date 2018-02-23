@@ -14,7 +14,7 @@ class Operate:
         读取yaml信息并执行
         element_info：定位元素信息
         find_type：属性，id、xpath、text、ids
-        operate_type: click、sendkeys、back、swipe_up 为back就是返回，暂时就三种
+        operate_type: click、exist、sendkeys、back、swipe_up exist判断元素在页面是否存在
 
         上面三个必填，operate_type必填!!!!!!
 
@@ -36,6 +36,17 @@ class Operate:
                 elif self.yaml.get_findtype(i) == 'ids':
                     self.baseoperate.get_ids(self.yaml.get_elementinfo(i))[self.yaml.get_index(i)].click()
 
+            elif self.yaml.get_operate_type(i) == 'exist':
+                self.driver.implicitly_wait(3)
+                if self.yaml.get_findtype(i) == 'text':
+                    self.baseoperate.get_name(self.yaml.get_elementinfo(i))
+                elif self.yaml.get_findtype(i) == 'id':
+                    self.baseoperate.get_id(self.yaml.get_elementinfo(i))
+                elif self.yaml.get_findtype(i) == 'xpath':
+                    self.baseoperate.get_xpath(self.yaml.get_elementinfo(i))
+                elif self.yaml.get_findtype(i) == 'ids':
+                    self.baseoperate.get_ids(self.yaml.get_elementinfo(i))[self.yaml.get_index(i)].is_displayed()
+
             elif self.yaml.get_operate_type(i) == 'send_keys':
                 self.driver.implicitly_wait(3)
                 if self.yaml.get_findtype(i) == 'text':
@@ -54,6 +65,10 @@ class Operate:
             elif self.yaml.get_operate_type(i) == 'swipe_up':
                 for n in range(self.yaml.get_backtimes(i)):
                     self.baseoperate.swipeUp()
+
+            elif self.yaml.get_operate_type(i) == 'swipe_down':
+                for n in range(self.yaml.get_backtimes(i)):
+                    self.baseoperate.swipeDown()
 
 
     def back_home(self):

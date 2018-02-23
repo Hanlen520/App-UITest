@@ -2,9 +2,10 @@
 import os
 from common.operate import Operate
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-yamlpath = PATH("D:\\Study-Appium\\test_yaml\\login001.yaml")
+# yamlpath = PATH("D:\\Study-Appium\\test_yaml\\02_ExitLogin.yaml.yaml")
+yamlpath = PATH('/Users/xintudoutest/github/Appium/test_yaml/02_ExitLogin.yaml')
 
-class login001:
+class ExitLogin:
 
     def __init__(self, driver):
         self.path = yamlpath
