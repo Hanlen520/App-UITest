@@ -36,16 +36,16 @@ class Operate:
                 elif self.yaml.get_findtype(i) == 'ids':
                     self.baseoperate.get_ids(self.yaml.get_elementinfo(i))[self.yaml.get_index(i)].click()
 
-            elif self.yaml.get_operate_type(i) == 'exist':
+            elif self.yaml.get_operate_type(i) == 'displayed':
                 self.driver.implicitly_wait(3)
                 if self.yaml.get_findtype(i) == 'text':
-                    self.baseoperate.get_name(self.yaml.get_elementinfo(i))
+                    self.baseoperate.get_name(self.yaml.get_elementinfo(i)).is_displayed(self)
                 elif self.yaml.get_findtype(i) == 'id':
-                    self.baseoperate.get_id(self.yaml.get_elementinfo(i))
+                    self.baseoperate.get_id(self.yaml.get_elementinfo(i)).is_displayed(self)
                 elif self.yaml.get_findtype(i) == 'xpath':
-                    self.baseoperate.get_xpath(self.yaml.get_elementinfo(i))
+                    self.baseoperate.get_xpath(self.yaml.get_elementinfo(i)).is_displayed(self)
                 elif self.yaml.get_findtype(i) == 'ids':
-                    self.baseoperate.get_ids(self.yaml.get_elementinfo(i))[self.yaml.get_index(i)].is_displayed()
+                    self.baseoperate.get_ids(self.yaml.get_elementinfo(i))[self.yaml.get_index(i)].is_displayed(self)
 
             elif self.yaml.get_operate_type(i) == 'send_keys':
                 self.driver.implicitly_wait(3)

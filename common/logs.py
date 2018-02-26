@@ -5,7 +5,8 @@ import logging
 
 #使用相对路径+绝对路径
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-log_path = PATH("D:\\Study-Appium\\logs\\")
+# log_path = PATH("D:\\Study-Appium\\logs\\")
+log_path = PATH('/Users/xintudoutest/github/Appium/log/')
 
 class log():
     def __init__(self):
@@ -23,13 +24,13 @@ class log():
         :return:
         '''
 
-        #send logging output to a disk file
-        fh = logging.FileHandler(self.logname,'a')
+        # send logging output to a disk file
+        fh = logging.FileHandler(self.logname, 'a')
         fh.setLevel(logging.DEBUG)
         fh.setFormatter(self.formatter)
         self.logger.addHandler(fh)
 
-        #send logging output to streams
+        # send logging output to streams
         ch = logging.StreamHandler()
         ch.setLevel(logging.DEBUG)
         ch.setFormatter(self.formatter)
@@ -44,7 +45,7 @@ class log():
         elif level =='error':
             self.logger.error(message)
 
-        #防止重复打印
+        # 防止重复打印
         self.logger.removeHandler(fh)
         self.logger.removeHandler(ch)
 
