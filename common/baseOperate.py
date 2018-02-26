@@ -26,7 +26,7 @@ class BaseOperate:
         :return: windowsize
         '''
         global windowSize
-        windowSize = self.driver.get_window_size()
+        windowSize = WebDriverWait(self.driver, 10).until(self.driver.get_window_size())
         return windowSize
 
     def swipeUp(self):

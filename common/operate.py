@@ -52,12 +52,10 @@ class Operate:
                     self.baseoperate.back()
 
             elif self.yaml.get_operate_type(i) == 'swipe_up':
-                self.driver.time.sleep(3)
                 for n in range(self.yaml.get_backtimes(i)):
                     self.baseoperate.swipeUp()
 
             elif self.yaml.get_operate_type(i) == 'swipe_down':
-                self.driver.time.sleep(3)
                 for n in range(self.yaml.get_backtimes(i)):
                     self.baseoperate.swipeDown()
 
