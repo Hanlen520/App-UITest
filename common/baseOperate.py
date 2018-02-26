@@ -84,9 +84,6 @@ class BaseOperate:
         :param name:
         :return:
         '''
-        # element = driver.find_element_by_name(name)
-        # return element
-
         findname = "//*[@text='%s']"%(name)
         try:
             element = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath(findname))

@@ -26,10 +26,6 @@ testcase:
       find_type: id
       operate_type: click
     -
-      element_info: 推荐a
-      find_type: text
-      operate_type: displayed
-    -
       element_info:
       find_type:
       operate_type: swipe_up

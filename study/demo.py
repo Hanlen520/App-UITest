@@ -3,7 +3,8 @@ from study import click, assertion
 from devices.ad_device import driver
 import unittest
 import time
-from HTMLTestRunner import HTMLTestRunner
+import HTMLTestRunner
+
 
 class Test(unittest.TestCase):
     """爱鹿登录"""

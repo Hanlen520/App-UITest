@@ -1,7 +1,5 @@
 # coding=utf-8
-import time
 import unittest
-from HTMLTestRunner import HTMLTestRunner
 
 #注意使用套件时，在单个py文件中下的多个用例用  (类名（"方法名")),
 #导入多个py的类下，用（py名.类名）

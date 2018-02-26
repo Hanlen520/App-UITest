@@ -2,8 +2,7 @@
 import os
 import time
 import unittest
-from HTMLTestRunner import HTMLTestRunner
-from HTMLTestRunner import ala
+import HTMLTestRunner
 from Case.Login import Test
 
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
@@ -20,7 +19,7 @@ def testsuit():
     filename = '/Users/xintudoutest/github/Appium/report/' + now + "Myreport.html"
     fp = open(filename, 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告', description=u'测试用例结果', tester=u'宇宙超级无敌大圈圈')
-    # runner = ala.HTMLTestRunner(stream=fp, title='beta2 test result', description=u'result:')
+    # runner = HTML.HTMLTestRunner(stream=fp, title='beta2 test result', description=u'result:')
     runner.run(suite)
     fp.close()
 

@@ -5,7 +5,7 @@ import logging
 
 #使用相对路径+绝对路径
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-# log_path = PATH("D:\\Study-Appium\\logs\\")
+# log_path = PATH("D:\\Study-Appium\\log\\")
 log_path = PATH('/Users/xintudoutest/github/Appium/log/')
 
 class log():

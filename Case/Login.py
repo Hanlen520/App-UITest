@@ -1,8 +1,8 @@
 # coding=utf-8
 import unittest
 import time
-from page.login_page.AccountLogin_01 import AccountLogin
-from page.login_page.ExitLogin_02 import ExitLogin
+from page.login_page.page_AccountLogin import AccountLogin
+from page.login_page.page_ExitLogin import ExitLogin
 from devices.ad_device import driver
 
 class Test(unittest.TestCase):
