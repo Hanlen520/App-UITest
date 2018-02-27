@@ -15,16 +15,20 @@ testcase:
       element_info: com.youcai.android:id/passport_username
       find_type: id
       operate_type: send_keys
-      send_content: 18810948950
+      send_content: quanquandequan@126.com
     -
       element_info: com.youcai.android:id/passport_password
       find_type: id
       operate_type: send_keys
-      send_content: ailu123456
+      send_content: xinxin327
     -
       element_info: com.youcai.android:id/passport_login
       find_type: id
       operate_type: click
+    -
+      element_info: 推荐a
+      find_type: text
+      operate_type: displayed
     -
       element_info:
       find_type:

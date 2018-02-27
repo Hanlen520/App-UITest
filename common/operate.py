@@ -14,7 +14,7 @@ class Operate:
         读取yaml信息并执行
         element_info：定位元素信息
         find_type：属性，id、xpath、text、ids
-        operate_type: click、sendkeys、back、swipe_up、swipe_down
+        operate_type: click、sendkeys、back、swipe_up、swipe_down、displayed
 
         上面三个必填，operate_type必填!!!!!!
 
@@ -25,6 +25,7 @@ class Operate:
         '''
 
         for i in range(self.yaml.caselen()):
+
             if self.yaml.get_operate_type(i) == 'click':
                 self.driver.implicitly_wait(3)
                 if self.yaml.get_findtype(i) == 'text':
@@ -46,6 +47,10 @@ class Operate:
                     self.baseoperate.get_xpath(self.yaml.get_elementinfo(i)).send_keys(self.yaml.get_send_content(i))
                 elif self.yaml.get_findtype(i) == 'ids':
                     self.baseoperate.get_ids(self.yaml.get_elementinfo(i))[self.yaml.get_index(i)].send_keys(self.yaml.get_send_content(i))
+
+            elif self.yaml.get_operate_type(i) == 'displayed':
+                if self.yaml.get_findtype(i) == 'text':
+                    self.baseoperate.name_displayed(self.yaml.get_elementinfo(i)).is_displayed()
 
             elif self.yaml.get_operate_type(i) == 'back':
                 for n in range(self.yaml.get_backtimes(i)):

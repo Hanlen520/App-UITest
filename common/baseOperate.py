@@ -26,7 +26,8 @@ class BaseOperate:
         :return: windowsize
         '''
         global windowSize
-        windowSize = WebDriverWait(self.driver, 10).until(self.driver.get_window_size())
+        windowSize = WebDriverWait(self.driver, 10).until(lambda x: x.get_window_size())
+        self.driver.implicitly_wait(2)
         return windowSize
 
     def swipeUp(self):
@@ -101,8 +102,8 @@ class BaseOperate:
         :return:
         '''
         try:
-            # element = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_id(id()))
-            element = self.driver.find_element_by_id(id)
+            element = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_id(id))
+            # element = self.driver.find_element_by_id(id)
             self.driver.implicitly_wait(2)
             return element
         except:
@@ -137,6 +138,22 @@ class BaseOperate:
             return elements
         except:
             log.error('未定位到元素：'+'%s'%(id))
+            self.screenshot()
+
+    def name_displayed(self, name):
+        '''
+        定位页面text元素
+        :param name:
+        :return:
+        '''
+        findname = "//*[@text='%s']"%(name)
+        try:
+            element = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath(findname))
+            # element = self.driver.find_element_by_xpath(findname)
+            self.driver.implicitly_wait(2)
+            return element
+        except:
+            log.error('未定位到元素：'+'%s'%(name))
             self.screenshot()
 
     def page(self, name):
