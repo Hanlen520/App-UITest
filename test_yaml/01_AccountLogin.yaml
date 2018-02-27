@@ -26,7 +26,7 @@ testcase:
       find_type: id
       operate_type: click
     -
-      element_info: 推荐a
+      element_info: 推荐
       find_type: text
       operate_type: displayed
     -
