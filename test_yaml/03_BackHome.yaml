@@ -1,0 +1,21 @@
+testinfo:
+    - id: demo_001
+      title: 调试backhome
+      execute: 1
+testcase:
+    -
+      element_info: com.youcai.android:id/home_tab_mine
+      find_type: id
+      operate_type: click
+    -
+      element_info: 关注
+      find_type: text
+      operate_type: click
+    -
+      element_info: 养猫的神经病
+      find_type: text
+      operate_type: click
+    -
+      element_info: 粉丝
+      find_type: text
+      operate_type: click

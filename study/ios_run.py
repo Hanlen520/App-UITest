@@ -1,5 +1,7 @@
 # coding=utf-8
 import unittest
+import time
+import HTMLTestRunner
 
 #注意使用套件时，在单个py文件中下的多个用例用  (类名（"方法名")),
 #导入多个py的类下，用（py名.类名）
@@ -19,4 +21,10 @@ def CreateSuite():                                                      # 产生
 
 
 #下面语句用来生成测试报告
-
+all_case_names = CreateSuite()
+now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
+filename = '/Users/xintudoutest/appium/AppiumUI/report/'+now+"Myreport.html"
+fp = open(filename, 'wb')
+runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告', description=u'测试用例结果', tester=u'宇宙超级无敌大圈圈')
+runner.run(all_case_names)
+fp.close()

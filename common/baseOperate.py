@@ -140,26 +140,10 @@ class BaseOperate:
             log.error('未定位到元素：'+'%s'%(id))
             self.screenshot()
 
-    def name_displayed(self, name):
-        '''
-        定位页面text元素
-        :param name:
-        :return:
-        '''
-        findname = "//*[@text='%s']"%(name)
-        try:
-            element = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath(findname))
-            # element = self.driver.find_element_by_xpath(findname)
-            self.driver.implicitly_wait(2)
-            return element
-        except:
-            log.error('未定位到元素：'+'%s'%(name))
-            self.screenshot()
 
     def page(self, name):
         '''
-        返回至指定页面
-        代码有点问题，不能连续返回到首页
+        返回至指定页面、不兼容Android7.0系统
         :return:
         '''
         i = 0
@@ -167,7 +151,7 @@ class BaseOperate:
             i = i + 1
             try:
                 findname = "//*[@text='%s']" % (name)
-                self.driver.find_element_by_xpath(findname)
+                WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath(findname))
                 self.driver.implicitly_wait(2)
                 break
             except:
@@ -178,10 +162,7 @@ class BaseOperate:
                     self.driver.implicitly_wait(2)
                 except:
                     os.popen("adb shell input keyevent 4")
-                try:
-                    self.driver.find_element_by_xpath("//*[@text='推荐']")
-                    self.driver.implicitly_wait(2)
-                    break
-                except:
-                    os.popen("adb shell input keyevent 4")
+
+
+
 

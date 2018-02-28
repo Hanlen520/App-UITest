@@ -135,4 +135,5 @@ if __name__ == '__main__':
     suite.addTest(Test('test_05'))
     suite.addTest(Test('test_06'))
     suite.addTest(Test('test_07'))
-    unittest.TextTestRunner(verbosity=7).run(suite)
+    runner = unittest.TextTestRunner(verbosity=7).run(suite)
+    runner.run(suite)

@@ -50,7 +50,7 @@ class Operate:
 
             elif self.yaml.get_operate_type(i) == 'displayed':
                 if self.yaml.get_findtype(i) == 'text':
-                    self.baseoperate.name_displayed(self.yaml.get_elementinfo(i)).is_displayed()
+                    self.baseoperate.get_name(self.yaml.get_elementinfo(i)).is_displayed()
 
             elif self.yaml.get_operate_type(i) == 'back':
                 for n in range(self.yaml.get_backtimes(i)):
@@ -70,4 +70,4 @@ class Operate:
         返回至首页
         :return:
         '''
-        self.baseoperate.page('推荐')
+        self.baseoperate.page(u'推荐')

@@ -1,9 +1,12 @@
 # coding=utf-8
 from devices.ad_device import driver
 from appium.webdriver.common.touch_action import TouchAction
+from selenium.webdriver.support.ui import WebDriverWait
 
-def resourceid(self):
-    driver.find_element_by_id(self).click()
+def resourceid(id):
+    element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id(id))
+    driver.implicitly_wait(2)
+    element.click()
 
 def classname(self):
     driver.find_element_by_class_name(self).click()
