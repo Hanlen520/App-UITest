@@ -1,4 +1,5 @@
 # coding=utf-8
+
 from selenium.webdriver.support.ui import WebDriverWait
 from common.logs import log
 import os
@@ -151,7 +152,7 @@ class BaseOperate:
             i = i + 1
             try:
                 findname = "//*[@text='%s']" % (name)
-                WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath(findname))
+                self.driver.find_element_by_xpath(findname)
                 self.driver.implicitly_wait(2)
                 break
             except:

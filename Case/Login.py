@@ -1,9 +1,10 @@
 # coding=utf-8
+
 import unittest
-import time
 from page.page_login.page_AccountLogin import AccountLogin
 from page.page_login.page_ExitLogin import ExitLogin
-from devices.ad_device import driver
+from common.getDriver import driver
+
 
 class LoginTest(unittest.TestCase):
     """登录"""

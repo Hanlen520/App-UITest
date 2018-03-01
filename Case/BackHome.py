@@ -1,8 +1,10 @@
 # coding=utf-8
+
 import unittest
 import time
 from page.page_backhome import DemoPage
-from devices.ad_device import driver
+from common.getDriver import driver
+
 
 class DemoTest(unittest.TestCase):
     """调试backhome"""

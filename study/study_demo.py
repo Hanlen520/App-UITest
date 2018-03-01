@@ -1,9 +1,8 @@
 # coding=utf-8
 from study import click
-from devices.ad_device import driver
 import unittest
 import os
-import time
+from common.getDriver import driver
 
 
 class Test(unittest.TestCase):

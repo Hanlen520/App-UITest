@@ -2,7 +2,7 @@
 from study import click, assertion
 import unittest
 import time
-from devices.ad_device import driver
+from study.ad_device import driver
 
 enter = "com.tudou.android:id/tab_upload"
 back = "com.tudou.android:id/imgBack"

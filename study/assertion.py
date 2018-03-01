@@ -1,5 +1,5 @@
 # coding=utf-8
-from devices.ad_device import driver
+from study.ad_device import driver
 import time
 
 def screenshot():
