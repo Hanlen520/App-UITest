@@ -9,17 +9,21 @@ def resourceid(id):
     driver.implicitly_wait(2)
     element.click()
 
-def classname(self):
-    driver.find_element_by_class_name(self).click()
+def classname(name):
+    element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_class_name(name))
+    driver.implicitly_wait(2)
+    element.click()
 
-def classnames(self, x):
-    driver.find_elements_by_class_name(self).__getitem__(x).click()
 
-def xpath(self):
-    driver.find_element_by_xpath(self).click()
+def xpath(xpath):
+    element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_xpath(xpath))
+    driver.implicitly_wait(2)
+    element.click()
 
-def name(self):
-    driver.find_element_by_name(self).click()
+def name(name):
+    element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_name(name))
+    driver.implicitly_wait(2)
+    element.click()
 
 def tap(x, y):
     TouchAction(driver).tap(None, x, y).perform()

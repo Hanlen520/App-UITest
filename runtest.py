@@ -4,6 +4,7 @@ import os
 import time
 import unittest
 import HTMLTestRunner
+from common.sendEmail import send_email
 from Case.Login import LoginTest
 from Case.BackHome import DemoTest
 
@@ -22,7 +23,11 @@ def testsuit():
     runner.run(suite)
     fp.close()
 
+def email():
+    send_email()
+
 if __name__ == "__main__":
+
     testsuit()
-#   send_email()
+    email()
 

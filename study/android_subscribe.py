@@ -1,4 +1,5 @@
 # coding=utf-8
+
 from study import click, assertion, Swipe
 import unittest
 import time

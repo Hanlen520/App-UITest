@@ -16,7 +16,7 @@ class BaseOperate:
 
     def back(self):
         '''
-        返回键
+        点击物理返回键
         :return:
         '''
         os.popen("adb shell input keyevent 4")
@@ -163,7 +163,3 @@ class BaseOperate:
                     self.driver.implicitly_wait(2)
                 except:
                     os.popen("adb shell input keyevent 4")
-
-
-
-
