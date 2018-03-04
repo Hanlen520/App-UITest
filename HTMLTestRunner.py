@@ -178,8 +178,8 @@ class Template_mixin(object):
 
     STATUS = {
         0: '通过',
-        1: '失败',
-        2: '错误',
+        2: '失败',
+        1: '错误',
     }
 
     DEFAULT_TITLE = '单元测试报告'
@@ -351,7 +351,7 @@ table       { font-size: 100%; }
     REPORT_TMPL = """
 <p id='show_detail_line'>
 <a class="btn btn-primary" href='javascript:showCase(0)'>概要{ %(passrate)s }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ %(fail)s }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ %(error)s }</a>
 <a class="btn btn-success" href='javascript:showCase(2)'>通过{ %(Pass)s }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ %(count)s }</a>
 </p>
@@ -378,8 +378,8 @@ table       { font-size: 100%; }
     <td>总计</td>
     <td>%(count)s</td>
     <td>%(Pass)s</td>
-    <td>%(fail)s</td>
     <td>%(error)s</td>
+    <td>%(fail)s</td>
     <td>通过率：%(passrate)s</td>
 	<td></td>
 </tr>
@@ -391,8 +391,8 @@ table       { font-size: 100%; }
     <td>%(desc)s</td>
     <td class="text-center">%(count)s</td>
     <td class="text-center">%(Pass)s</td>
-    <td class="text-center">%(fail)s</td>
     <td class="text-center">%(error)s</td>
+    <td class="text-center">%(fail)s</td>
     <td class="text-center"><a href="javascript:showClassDetail('%(cid)s',%(count)s)" class="detail" id='%(cid)s'>详细</a></td>
 	<td></td>
 </tr>
@@ -416,7 +416,7 @@ table       { font-size: 100%; }
     </div>
     </td>
 	<td align='center'>
-    <a  %(hidde)s  href="%(image)s">用例截图</a>
+    <a  %(hidde)s  href="%(image)s">失败截图</a>
     </td>
 </tr>
 """  # variables: (tid, Class, style, desc, status)
@@ -427,7 +427,7 @@ table       { font-size: 100%; }
     <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
     <td colspan='5' align='center'><span class="label label-success success">%(status)s</span></td>
 	<td align='center'>
-    <a  %(hidde)s  href="%(image)s">用例截图</a>
+    <a  %(hidde)s  href="%(image)s">失败截图</a>
     </td>
 </tr>
 """  # variables: (tid, Class, style, desc, status)

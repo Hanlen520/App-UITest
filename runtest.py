@@ -16,8 +16,8 @@ def testsuit():
     suite.addTests([unittest.defaultTestLoader.loadTestsFromTestCase(DemoTest), ])
 
     now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-    # filename = 'D:\\Study-Appium\\report\\' + now + "Myreport.html"
-    filename = '/Users/xintudoutest/github/Appium/report/' + now + "Myreport.html"
+    filename = 'D:\\Study-Appium\\report\\' + now + "Myreport.html"
+    # filename = '/Users/xintudoutest/github/Appium/report/' + now + "Myreport.html"
     fp = open(filename, 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告', description=u'测试用例结果', tester=u'宇宙超级无敌大圈圈')
     runner.run(suite)

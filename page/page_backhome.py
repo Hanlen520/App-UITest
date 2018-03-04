@@ -4,7 +4,8 @@ import os
 from common.operate import Operate
 
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-yamlpath = PATH('/Users/xintudoutest/github/Appium/test_yaml/03_BackHome.yaml')
+yamlpath = PATH("D:\\Study-Appium\\test_yaml\\03_BackHome.yaml")
+# yamlpath = PATH('/Users/xintudoutest/github/Appium/test_yaml/03_BackHome.yaml')
 
 class DemoPage:
 

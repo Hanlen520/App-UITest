@@ -75,8 +75,8 @@ class BaseOperate:
         # 获取当前时间
         now = time.strftime("%Y%m%d.%H.%M.%S")
         # 将图片保存到指定目录下，并用时间命名
-        # self.driver.get_screenshot_as_file('D:\\Study-Appium\\screenshot\\' + now + '.png')
-        self.driver.get_screenshot_as_file('/Users/xintudoutest/github/Appium/screenshot/' + now + '.png')
+        self.driver.get_screenshot_as_file('D:\\Study-Appium\\screenshot\\' + now + '.png')
+        # self.driver.get_screenshot_as_file('/Users/xintudoutest/github/Appium/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 
 
