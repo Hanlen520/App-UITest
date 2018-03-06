@@ -7,6 +7,4 @@
 * 邮件接收HTML格式测试报告
 ### 待实现的功能：
 * 自动启动appium-server、Android执行case时性能监控
-### 小笔记
-* Android查看包名和Activity命令：adb shell dumpsys window w |findstr \/ |findstr name=
 
