@@ -2,15 +2,15 @@
 
 import unittest
 import time
-from page.page_backhome import DemoPage
+from page.page_backhome import BackPage
 from common.getDriver import driver
 
 
-class DemoTest(unittest.TestCase):
-    """调试backhome"""
+class HomeTest(unittest.TestCase):
+
     def test_01(self):
         """返回首页"""
-        ac = DemoPage(driver)
+        ac = BackPage(driver)
         ac.operatepe()
         ac.home()
 
@@ -19,4 +19,8 @@ class DemoTest(unittest.TestCase):
         driver.quit()
 
 if __name__ == "__main__":
-    unittest.main()
+
+    # unittest.main()
+    suite = unittest.TestSuite()
+    suite.addTest(HomeTest('test_01'))
+    unittest.TextTestRunner(verbosity=1).run(suite)

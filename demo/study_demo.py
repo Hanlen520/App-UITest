@@ -1,5 +1,5 @@
 # coding=utf-8
-from study import click
+from demo import click
 import unittest
 import os
 from common.getDriver import driver
@@ -36,5 +36,5 @@ class Test(unittest.TestCase):
 if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(Test('test_01'))
-    runner = unittest.TextTestRunner(verbosity=1).run(suite)
+    runner = unittest.TextTestRunner(verbosity=1)
     runner.run(suite)

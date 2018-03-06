@@ -4,26 +4,23 @@ import os
 import time
 import logging
 
-#使用相对路径+绝对路径
+# 使用相对路径+绝对路径
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-log_path = PATH("D:\\Study-Appium\\log\\")
-# log_path = PATH('/Users/xintudoutest/github/Appium/log/')
+# log_path = PATH("D:\\Study-Appium\\log\\")
+log_path = PATH('/Users/xintudoutest/github/Appium/log/')
 
 class log():
     def __init__(self):
-        filename = 'Quanquan'+''.join(time.strftime('%Y%m%d'))+''.join('.log') #设置log名
-        self.logname =os.path.join(log_path, filename)
+        # 设置log文件名称
+        filename = 'Quanquan'+''.join(time.strftime('%Y%m%d'))+''.join('.log')
+        self.logname = os.path.join(log_path, filename)
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
-        #设置日志输出格式
+        # 设置日志输出格式
         self.formatter = logging.Formatter('[%(asctime)s] - [%(levelname)s] - %(message)s')
 
+    # 打印log信息，level：日志等级，message：日志需要打印的信息
     def output(self, level, message):
-        '''
-        :param level: 日志等级
-        :param message: 日志需要打印的信息
-        :return:
-        '''
 
         # send logging output to a disk file
         fh = logging.FileHandler(self.logname, 'a')

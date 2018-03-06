@@ -22,4 +22,6 @@ class LoginTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    suite = unittest.TestSuite()
+    suite.addTest(LoginTest('test_01'))
+    unittest.TextTestRunner(verbosity=1).run(suite)

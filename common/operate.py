@@ -1,29 +1,26 @@
 # coding=utf-8
 
-from common.getYaml import getyaml
+from common.readYaml import readyaml
 from common.baseOperate import BaseOperate
 
 class Operate:
     def __init__(self, path, driver):
         self.path = path
         self.driver = driver
-        self.yaml = getyaml(self.path)
+        self.yaml = readyaml(self.path)
         self.baseoperate = BaseOperate(driver)
 
     def check_operate_type(self):
-        '''
-        读取yaml信息并执行
-        element_info：定位元素信息
-        find_type：属性，id、xpath、text、ids
-        operate_type: click、sendkeys、back、swipe_up、swipe_down、displayed
 
-        上面三个必填，operate_type必填!!!!!!
-
-        send_content：send_keys 时用到
-        index：ids时用到
-        times:
-        :return:
-        '''
+        """
+            # 读取yaml的信息并执行
+            # element_info：定位的元素信息
+            # find_type：id、xpath、text、ids
+            # operate_type: click、send_keys、back、swipe_up、swipe_down、displayed
+            # send_content：执行send_keys时，要输入的内容
+            # index：ids时用到，元素组的第几位
+            # times: swpie和back的次数
+        """
 
         for i in range(self.yaml.caselen()):
 
@@ -65,10 +62,6 @@ class Operate:
                 for n in range(self.yaml.get_backtimes(i)):
                     self.baseoperate.swipeDown()
 
-
+    # 返回首页
     def back_home(self):
-        '''
-        返回至首页
-        :return:
-        '''
-        self.baseoperate.page(u'推荐')
+        self.baseoperate.backpage(u'推荐')

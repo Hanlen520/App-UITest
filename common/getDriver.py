@@ -9,15 +9,15 @@ from common.logs import log
 
 
 log = log()
-con = Readconfig()
+conf = Readconfig()
 cmd = devices()
 
 
 deviceName = cmd.get_deviceName()
 platformVersion = cmd.get_platformVersion()
-platformName = con.getAppValue('platformName')
-appPackage = con.getAppValue('appPackage')
-appActivity = con.getAppValue('appActivity')
+platformName = conf.getAppValue('platformName')
+appPackage = conf.getAppValue('appPackage')
+appActivity = conf.getAppValue('appActivity')
 
 
 desired_caps = {}
@@ -35,5 +35,6 @@ try:
     time.sleep(5)
     log.info('获取driver成功')
 except WebDriverException:
-    print('No driver')
+    log.warn('获取driver失败')
+    # print('No driver')
 
