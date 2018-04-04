@@ -4,33 +4,16 @@ testinfo:
       execute: 1
 testcase:
     -
-      element_info: com.youcai.android:id/home_tab_mine
-      find_type: id
-      operate_type: click
-    -
-      element_info: 账号登录
-      find_type: text
-      operate_type: click
-    -
-      element_info: com.youcai.android:id/passport_username
+      element_info: com.waka:id/edt_login_email
       find_type: id
       operate_type: send_keys
-      send_content: 18810948950
+      send_content: quanquandequan@126.com
     -
-      element_info: com.youcai.android:id/passport_password
+      element_info: com.waka:id/edt_login_password
       find_type: id
       operate_type: send_keys
-      send_content: ailu123456
+      send_content: quanquan123
     -
-      element_info: com.youcai.android:id/passport_login
+      element_info: com.waka:id/btn_login
       find_type: id
       operate_type: click
-    -
-      element_info: 推荐
-      find_type: text
-      operate_type: displayed
-    -
-      element_info:
-      find_type:
-      operate_type: swipe_up
-      times: 2

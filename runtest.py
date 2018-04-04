@@ -5,8 +5,8 @@ import unittest
 import HTMLTestRunner
 from common.sendEmail import send_email
 
-all_case = '/Users/xintudoutest/github/Appium/Case'
-
+# all_case = '/Users/xintudoutest/github/Appium/Case'
+all_case = 'E:\\App-UITest\\Case'
 
 # 使用discover查找出Case文件夹下的所有ad开头的.py文件
 def CreateSuite():
@@ -25,8 +25,8 @@ def CreateSuite():
 def runtest():
     case = CreateSuite()
     now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-    # filename = 'D:\\Study-Appium\\report\\' + now + "Myreport.html"
-    filename = '/Users/xintudoutest/github/Appium/report/' + now + "Myreport.html"
+    filename = 'E:\\App-UITest\\report\\' + now + "Myreport.html"
+    # filename = '/Users/xintudoutest/github/Appium/report/' + now + "Myreport.html"
     fp = open(filename, 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告', description=u'测试用例结果', tester=u'宇宙超级无敌大圈圈')
     runner.run(case)
