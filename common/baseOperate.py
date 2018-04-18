@@ -1,6 +1,8 @@
 # coding=utf-8
 
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 from common.logs import log
 import os
 import time
@@ -56,8 +58,8 @@ class BaseOperate:
         # 获取当前时间
         now = time.strftime("%Y%m%d.%H.%M.%S")
         # 将图片保存到指定目录下，并用时间命名
-        # self.driver.get_screenshot_as_file('D:\\Study-Appium\\screenshot\\' + now + '.png')
-        self.driver.get_screenshot_as_file('/Users/xintudoutest/github/Appium/screenshot/' + now + '.png')
+        self.driver.get_screenshot_as_file('E:\\App-UITest\\screenshot\\' + now + '.png')
+        # self.driver.get_screenshot_as_file('/Users/xintudoutest/github/Appium/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 
     # 定位页面text元素，param：name
@@ -101,6 +103,16 @@ class BaseOperate:
             log.error('未定位到元素：'+'%s'%(id))
             self.screenshot()
 
+    # 查找页面toast元素，param：toast
+    def get_toast(self, toast):
+        try:
+            message = '//*[contains(@text,\'{}\')]'.format(toast)
+            element = WebDriverWait(self.driver, 5, 0.5).until(
+                EC.presence_of_element_located((By.XPATH, message)))
+            log.info('查找到toast：'+'%s'%(element.text))
+        except:
+            log.error('未查找到toast：'+'%s'%(toast))
+
     # 返回到指定页面，不兼容Android7.0系统
     def backpage(self, name):
         i = 0
@@ -114,7 +126,7 @@ class BaseOperate:
             except:
                 os.popen("adb shell input keyevent 4")
                 try:
-                    findname = "//*[@text='首页']"
+                    findname = "//*[@text='订单']"
                     self.driver.find_element_by_xpath(findname).click()
                     self.driver.implicitly_wait(2)
                 except:
