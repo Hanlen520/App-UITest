@@ -1,21 +1,23 @@
 testinfo:
-    - id: login_003
-      title: 退出账号
+    - id: login_002
+      title: 该邮箱未注册
       execute: 1
 testcase:
     -
-      element_info: com.youcai.android:id/home_tab_mine
+      element_info: com.waka:id/edt_login_email
+      find_type: id
+      operate_type: send_keys
+      send_content: quanquandequan@126.com
+    -
+      element_info: com.waka:id/edt_login_password
+      find_type: id
+      operate_type: send_keys
+      send_content: quanquan123
+    -
+      element_info: com.waka:id/btn_login
       find_type: id
       operate_type: click
     -
-      element_info: com.youcai.android:id/user_center_setting
-      find_type: id
-      operate_type: click
-    -
-      element_info: 退出当前账号
-      find_type: text
-      operate_type: click
-    -
-      element_info: 退出账号
-      find_type: text
-      operate_type: click
+      element_info: 该邮箱未注册
+      find_type: toast
+      operate_type: show

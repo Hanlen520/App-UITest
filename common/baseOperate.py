@@ -1,6 +1,8 @@
 # coding=utf-8
 
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 from common.logs import log
 import os
 import time
@@ -100,6 +102,16 @@ class BaseOperate:
         except:
             log.error('未定位到元素：'+'%s'%(id))
             self.screenshot()
+
+    # 查找页面toast元素，param：toast
+    def get_toast(self, toast):
+        try:
+            message = '//*[contains(@text,\'{}\')]'.format(toast)
+            element = WebDriverWait(self.driver, 5, 0.5).until(
+                EC.presence_of_element_located((By.XPATH, message)))
+            log.info('查找到toast：'+'%s'%(element.text))
+        except:
+            log.error('未查找到toast：'+'%s'%(toast))
 
     # 返回到指定页面，不兼容Android7.0系统
     def backpage(self, name):

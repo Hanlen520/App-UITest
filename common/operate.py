@@ -16,7 +16,7 @@ class Operate:
             # 读取yaml的信息并执行
             # element_info：定位的元素信息
             # find_type：id、xpath、text、ids
-            # operate_type: click、send_keys、back、swipe_up、swipe_down、displayed
+            # operate_type: click、send_keys、back、swipe_up、swipe_down、show
             # send_content：执行send_keys时，要输入的内容
             # index：ids时用到，元素组的第几位
             # times: swpie和back的次数
@@ -46,9 +46,11 @@ class Operate:
                 elif self.yaml.get_findtype(i) == 'ids':
                     self.baseoperate.get_ids(self.yaml.get_elementinfo(i))[self.yaml.get_index(i)].send_keys(self.yaml.get_send_content(i))
 
-            elif self.yaml.get_operate_type(i) == 'displayed':
+            elif self.yaml.get_operate_type(i) == 'show':
                 if self.yaml.get_findtype(i) == 'text':
-                    self.baseoperate.get_name(self.yaml.get_elementinfo(i)).is_displayed()
+                    self.baseoperate.get_name(self.yaml.get_elementinfo(i))
+                elif self.yaml.get_findtype(i) == 'toast':
+                    self.baseoperate.get_toast(self.yaml.get_elementinfo(i))
 
             elif self.yaml.get_operate_type(i) == 'back':
                 for n in range(self.yaml.get_backtimes(i)):
