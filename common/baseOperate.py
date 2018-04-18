@@ -114,7 +114,7 @@ class BaseOperate:
             except:
                 os.popen("adb shell input keyevent 4")
                 try:
-                    findname = "//*[@text='首页']"
+                    findname = "//*[@text='订单']"
                     self.driver.find_element_by_xpath(findname).click()
                     self.driver.implicitly_wait(2)
                 except:

@@ -1,6 +1,6 @@
 testinfo:
     - id: login_001
-      title: 手机账号登录
+      title: 邮箱账号登录
       execute: 1
 testcase:
     -
